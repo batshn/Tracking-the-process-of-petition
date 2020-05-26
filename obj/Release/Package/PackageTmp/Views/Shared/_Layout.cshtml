@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - НДЕГ</title>
+    @Styles.Render("~/Content/bootstrap.min.css")
+    @Styles.Render("~/Content/Site.css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <!-- ************** Begin navbar ****************** -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header"> 
+                <div class="row">
+                    <div class="col-md-2">
+                        <a href='@Url.Action("/Index", "Home")'>
+                            <img src="~/Content/img/nd_logo.svg" alt="HTML5 Icon" width="128" height="128">
+                        </a>
+
+
+                    </div>
+                    <div class="col-md-10">
+                        <div class="txtHead">
+                            <div class="txtH1">ЗАСГИЙН ГАЗРЫН ХЭРЭГЖҮҮЛЭГЧ АГЕНТЛАГ </div>
+                            <div class="txtH2">НИЙГМИЙН ДААТГАЛЫН ЕРӨНХИЙ ГАЗАР</div>
+                        </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ************** End navbar ****************** -->
+
+    <!-- ************** Begin body ****************** -->
+    <div class="container body-content">
+
+        @RenderBody()
+
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - НДЕГ- Мэдээллийн Технологийн Төв</p>
+        </footer>
+    </div>
+    <!-- ************** End body ****************** -->
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127738695-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-127738695-1');
+    </script>
+
+</body>
+</html>

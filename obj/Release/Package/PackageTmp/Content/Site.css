@@ -1,0 +1,115 @@
+﻿body {
+    padding-bottom: 20px;
+    font-family: "Tahoma", Helvetica, Arial, sans-serif;
+    font-size:14px;
+}
+
+
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 350px;
+}
+
+.navbar {
+    min-height: 100px;
+    border-bottom: 2px solid #F2B134;
+}
+
+.navbar-inverse {
+    background-color: #105B63;
+    border-color: #FFD34E;
+    border-bottom-width: 3px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+        color: #BEEB9F;
+}
+
+.navbar-inverse .navbar-brand {
+        color: #BEEB9F;
+}
+
+
+.body-content{
+    margin-top:50px;
+    margin-bottom:100px;
+}
+
+
+.txtHead {
+    margin-top:50px;
+    margin-left: 50px;
+}
+
+.txtH1 {
+    color: #FFFAD5;
+}
+
+.txtH2 {
+    font-size: 20px;
+    color: #FFD34E;
+}
+
+
+.txtBold {
+    font-weight:bold;
+}
+
+
+.mb-5, .my-5 {
+    margin-bottom: 2rem !important;
+}
+
+
+.shadow-none {
+    border-left: 2px solid #E4E4C0;
+}
+
+.bg-light {
+    background-color: #FEFEF8 !important;
+}
+
+.txtLeng {
+    min-width: 300px;
+}
+
+
+.mainHeader {
+    height: 25px;
+    background-color: #F8C63F;
+    padding-left: 15px;
+    padding-top: 3px;
+    color: white;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.subHeader {
+    height: 25px;
+    background-color: #E4E4C0;
+    padding-left: 15px;
+    padding-top: 3px;
+    color: #F09622;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.tableSub{
+    font-size:13px;
+}
